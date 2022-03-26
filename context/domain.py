@@ -13,7 +13,7 @@ class Dataset:
 
     @property
     def dataName(self) -> object: return self._dataName
-    
+
     @dataName.setter
     def dataName(self, dataName) -> object: self._dataName = dataName
 
@@ -30,10 +30,10 @@ class Dataset:
     def fileName(self, fileName) -> object: self._fileName = fileName
 
     @property
-    def train(self) ->object: return self._train
+    def train(self) -> object: return self._train
 
     @train.setter
-    def train(self, train) -> object: self.train = train
+    def train(self, train) -> object: self._train = train
 
     @property
     def test(self) -> object: return self._test
@@ -52,6 +52,3 @@ class Dataset:
 
     @label.setter
     def label(self, label) -> object: self._label = label
-
-
-

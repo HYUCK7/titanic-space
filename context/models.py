@@ -15,3 +15,7 @@ class Model:
     def new_model(self, fileName) -> object:
         this = self.ds
         return pd.read_csv(f'{this.dataName}{fileName}', index_col=0)
+
+    def new_dframe(self, filename) -> object:
+        this = self.ds
+        return pd.read_csv(f'{this.dataName}{filename}')
